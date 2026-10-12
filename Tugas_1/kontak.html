@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guitar House - informasi dan galeri gitar akustik, klasik, dan elektrik.">
+  <title>Kontak | Guitar House</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+  <header>
+    <a class="brand" href="home.html"><span class="brand-mark">♪</span><div><h1>GUITAR HOUSE</h1><p class="tagline">Find your sound</p></div></a>
+    <div class="hero"><img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1400&q=85" alt="Gitar dan suasana musik"><strong>Guitar House</strong></div>
+  </header>
+  <nav aria-label="Navigasi utama">
+    <a href="home.html" >Home</a>
+<a href="galeri.html" >Galeri</a>
+<a href="produk.html" >Produk</a>
+<a href="kontak.html" aria-current="page">Kontak</a>
+  </nav>
+  <main>
+    
+<section class="intro"><div class="eyebrow">Say hello</div><h2>Kontak Guitar House</h2><p>Punya pertanyaan tentang jenis gitar atau ingin berbagi saran? Gunakan informasi kontak contoh di bawah ini.</p></section>
+<div class="contact-layout">
+<section class="contact-card"><h2>Informasi Kontak</h2>
+<p><strong>Email:</strong> <a href="mailto:info@guitarhouse.example">info@guitarhouse.example</a></p>
+<p><strong>Instagram:</strong> <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">@guitarhouse</a></p>
+<p><strong>Lokasi:</strong> Malang, Jawa Timur</p>
+<p><strong>Jam informasi:</strong> Senin–Sabtu, 09.00–17.00</p>
+<p class="note">Kontak di atas adalah contoh untuk tugas, bukan layanan toko sungguhan.</p>
+</section>
+<section class="contact-card"><h2>Kirim Pesan</h2>
+<form action="mailto:info@guitarhouse.example" method="post" enctype="text/plain">
+<label for="nama">Nama</label><input id="nama" name="Nama" type="text" placeholder="Nama kamu" required>
+<label for="email">Email</label><input id="email" name="Email" type="email" placeholder="nama@email.com" required>
+<label for="topik">Topik</label><select id="topik" name="Topik"><option>Pertanyaan produk</option><option>Saran website</option><option>Lainnya</option></select>
+<label for="pesan">Pesan</label><textarea id="pesan" name="Pesan" placeholder="Tulis pesan di sini..." required></textarea>
+<button type="submit" style="display:none">Kirim</button>
+<a class="form-link" href="mailto:info@guitarhouse.example" onclick="const f=this.closest('section').querySelector('form'); if(!f.reportValidity()) return false; const n=f.querySelector('#nama').value; const e=f.querySelector('#email').value; const t=f.querySelector('#topik').value; const p=f.querySelector('#pesan').value; this.href='mailto:info@guitarhouse.example?subject='+encodeURIComponent(t)+'&body='+encodeURIComponent('Nama: '+n+'\nEmail: '+e+'\n\n'+p);">Kirim melalui Email ↗</a>
+</form>
+<p class="note">Tombol pengiriman berupa hyperlink sesuai ketentuan tugas. Link akan membuka aplikasi email jika tersedia.</p>
+</section></div>
+<h2 style="margin-top:28px">Navigasi halaman</h2>
+<table class="content-table"><tr><th>Halaman</th><th>Isi</th></tr>
+<tr><td><a href="home.html">Home</a></td><td>Beranda dan pengenalan kategori gitar.</td></tr>
+<tr><td><a href="galeri.html">Galeri</a></td><td>Kumpulan foto instrumen.</td></tr>
+<tr><td><a href="produk.html">Produk</a></td><td>Contoh katalog gitar akustik, klasik, dan listrik.</td></tr>
+<tr><td><a href="kontak.html">Kontak</a></td><td>Informasi kontak dan form pesan.</td></tr></table>
+
+  </main>
+  <footer>© 2026 <span>Guitar House</span> · Made for music lovers</footer>
+</div>
+</body>
+</html>
